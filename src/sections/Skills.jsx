@@ -39,7 +39,6 @@ const Skills = () => {
       skills: [
         { name: 'MongoDB', icon: <SiMongodb className="text-[#47A248]" /> },
         { name: 'PostgreSQL', icon: <SiPostgresql className="text-[#4169E1]" /> },
-        { name: 'phpMyAdmin', icon: <SiPhpmyadmin className="text-[#6C78AF]" /> },
         { name: 'MSSQL Server', icon: <DiMsqlServer className="text-[#CC292B]" /> },
         { name: 'MySQL', icon: <SiMysql className="text-[#4479A1]" /> },
       ],
