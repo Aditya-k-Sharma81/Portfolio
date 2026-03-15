@@ -61,9 +61,9 @@ const Contact = () => {
             <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
             <div className="space-y-6">
               {[
-                { icon: <Mail className="text-accent-indigo" />, label: 'Email', value: 'adity@example.com', href: 'mailto:adity@example.com' },
-                { icon: <Linkedin className="text-blue-500" />, label: 'LinkedIn', value: 'linkedin.com/in/adity', href: '#' },
-                { icon: <Github className="text-white" />, label: 'GitHub', value: 'github.com/adity', href: '#' },
+                { icon: <Mail className="text-accent-indigo" />, label: 'Email', value: 'adityasharmaas813@gmail.com', href: 'mailto:adityasharmaas813@gmail.com' },
+                { icon: <Linkedin className="text-blue-500" />, label: 'LinkedIn', value: 'linkedin.com/in/aditya-k-sharma81', href: 'https://www.linkedin.com/in/aditya-k-sharma81/' },
+                { icon: <Github className="text-white" />, label: 'GitHub', value: 'github.com/Aditya-k-Sharma81', href: 'https://github.com/Aditya-k-Sharma81' },
                 { icon: <MapPin className="text-red-500" />, label: 'Location', value: 'LPU, Punjab, India', href: null },
               ].map((item, idx) => (
                 <div key={item.label} className="flex items-center gap-4 group">

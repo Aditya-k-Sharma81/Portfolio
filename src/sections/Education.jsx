@@ -5,22 +5,22 @@ import { GraduationCap } from 'lucide-react';
 const Education = () => {
   const education = [
     {
-      degree: 'B.Tech in Computer Science',
-      institution: 'Lovely Professional University (LPU)',
-      year: '2021 - Present',
-      desc: 'Currently in 3rd Year / 6th Semester. Specializing in MERN Stack and Cloud Computing.'
+      degree: 'Bachelor of Technology - Computer Science and Engineering',
+      institution: 'LOVELY PROFESSIONAL UNIVERSITY, PHAGWARA, PUNJAB',
+      year: 'Since Aug 2023',
+      desc: 'CGPA: 7.9'
     },
     {
-      degree: 'Intermediate (12th Grade)',
-      institution: 'State Board of Education',
-      year: '2019 - 2021',
-      desc: 'Focused on Physics, Chemistry, and Mathematics (PCM).'
+      degree: 'Intermediate',
+      institution: 'A.N.D COLLEGE SHAHPUR PATORI, BIHAR',
+      year: 'May 2021 – Mar 2023',
+      desc: 'Percentage: 73.6%'
     },
     {
-      degree: 'Matriculation (10th Grade)',
-      institution: 'State Board of Education',
-      year: '2019',
-      desc: 'Achieved high honors in Science and Mathematics.'
+      degree: 'Matriculation',
+      institution: 'G B HIGH SCHOOL SHAHPUR PATORI, BIHAR',
+      year: 'Apr 2020 – Mar 2021',
+      desc: 'Percentage: 72.4%'
     }
   ];
 
@@ -50,7 +50,7 @@ const Education = () => {
             >
               {/* Timeline dot */}
               <div className="absolute top-0 -left-[11px] md:left-auto md:right-auto md:top-2 w-6 h-6 bg-dark border-4 border-accent-indigo rounded-full z-10 md:left-1/2 md:-translate-x-1/2"></div>
-              
+
               <div className="glass-card p-6 hover:shadow-indigo-500/10 transition-all group">
                 <div className={`flex items-center gap-3 mb-2 ${idx % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
                   <GraduationCap className="text-accent-indigo" size={20} />

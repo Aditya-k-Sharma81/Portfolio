@@ -5,22 +5,22 @@ import { Award, BookOpen, Trophy } from 'lucide-react';
 const Achievements = () => {
   const items = [
     {
-      title: 'Smart City Traffic Management',
-      type: 'Patent Published',
-      icon: <BookOpen className="text-accent-indigo" />,
-      description: 'An AI-driven system for real-time traffic signal optimization using IoT data.'
-    },
-    {
-      title: 'Scalable Microservices Analysis',
-      type: 'Research Paper',
+      title: '100 Days LeetCode Challenge',
+      type: 'Nov 2025',
       icon: <Award className="text-accent-indigo" />,
-      description: 'Published in IEEE: Comparative study of communication protocols in distributed systems.'
+      description: 'Successfully completed the 100 Days LeetCode Challenge.'
     },
     {
-      title: 'Smart India Hackathon',
-      type: 'Winner',
+      title: '5-Star HackerRank Badge',
+      type: 'Sep 2025',
       icon: <Trophy className="text-yellow-500" />,
-      description: 'Developed a disaster management portal that handles 10k+ concurrent requests.'
+      description: 'Earned a 5-star badge on HackerRank for excellence in C++ problem solving.'
+    },
+    {
+      title: '300+ LeetCode Problems',
+      type: 'Aug 2025',
+      icon: <BookOpen className="text-accent-indigo" />,
+      description: 'Solved over 300 algorithmic data structures and algorithms problems across LeetCode.'
     }
   ];
 

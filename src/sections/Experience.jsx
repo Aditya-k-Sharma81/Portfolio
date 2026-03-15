@@ -7,7 +7,7 @@ const Experience = () => {
     {
       role: 'Full Stack Intern',
       company: 'eDatapings',
-      period: 'Sep 2025 - Oct 2026',
+      period: 'Sep 2025 - Oct 2025',
       points: [
         'Built a full-stack Document Management System using .NET Core, integrating HTML, CSS, JavaScript, Bootstrap, and MS-SQL for efficient document storage and retrieval.',
         'Implemented OCR functionality to automatically extract text from uploaded documents, enabling faster document search and digital processing.',
