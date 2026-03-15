@@ -5,7 +5,7 @@ import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaNodeJs, FaPhp, FaGitAlt, Fa
 import { SiJavascript, SiTailwindcss, SiExpress, SiMongodb, SiPostgresql, SiPhpmyadmin, SiMysql, SiPostman } from 'react-icons/si';
 import { VscJson, VscServerProcess, VscVscode } from 'react-icons/vsc';
 import { DiDotnet, DiMsqlServer, DiVisualstudio } from 'react-icons/di';
-import { TbBrandCSharp } from 'react-icons/tb';
+import { TbBrandCSharp, TbSql } from 'react-icons/tb';
 
 const Skills = () => {
   const skillCategories = [
@@ -16,7 +16,7 @@ const Skills = () => {
         { name: 'HTML5', icon: <FaHtml5 className="text-[#E34F26]" /> },
         { name: 'CSS3', icon: <FaCss3Alt className="text-[#1572B6]" /> },
         { name: 'JavaScript (ES6+)', icon: <SiJavascript className="text-[#F7DF1E]" /> },
-        { name: 'React.js', icon: <FaReact className="text-[#61DAFB]" /> },
+        { name: 'React.Js', icon: <FaReact className="text-[#61DAFB]" /> },
         { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-[#06B6D4]" /> },
         { name: 'Bootstrap', icon: <FaBootstrap className="text-[#7952B3]" /> },
       ],
@@ -26,11 +26,11 @@ const Skills = () => {
       icon: <Server className="text-accent-teal" />,
       skills: [
         { name: 'Node.js', icon: <FaNodeJs className="text-[#339933]" /> },
-        { name: 'C#', icon: <TbBrandCSharp className="text-[#239120]" /> },
-        { name: 'PHP', icon: <FaPhp className="text-[#777BB4]" /> },
         { name: 'Express.js', icon: <SiExpress className="text-white" /> },
         { name: 'ASP.NET', icon: <DiDotnet className="text-[#512BD4]" /> },
-        { name: 'RESTful API', icon: <VscServerProcess className="text-accent-cyan" /> },
+        { name: 'C#', icon: <TbBrandCSharp className="text-[#239120]" /> },
+        { name: 'PHP', icon: <FaPhp className="text-[#777BB4]" /> },
+        { name: 'RESTful APIs', icon: <VscServerProcess className="text-accent-cyan" /> },
       ],
     },
     {
@@ -39,8 +39,9 @@ const Skills = () => {
       skills: [
         { name: 'MongoDB', icon: <SiMongodb className="text-[#47A248]" /> },
         { name: 'PostgreSQL', icon: <SiPostgresql className="text-[#4169E1]" /> },
-        { name: 'MSSQL Server', icon: <DiMsqlServer className="text-[#CC292B]" /> },
         { name: 'MySQL', icon: <SiMysql className="text-[#4479A1]" /> },
+        { name: 'Microsoft SQL Server', icon: <DiMsqlServer className="text-[#CC292B]" /> },
+        { name: 'SQL', icon: <TbSql className="text-[#00758F]" /> },
       ],
     },
     {
@@ -51,7 +52,7 @@ const Skills = () => {
         { name: 'GitHub', icon: <FaGithub className="text-white" /> },
         { name: 'Postman', icon: <SiPostman className="text-[#FF6C37]" /> },
         { name: 'Thunder Client', icon: <Zap className="text-[#8B5CF6]" /> },
-        { name: 'VS Code', icon: <VscVscode className="text-[#007ACC]" /> },
+        { name: 'Visual Studio Code', icon: <VscVscode className="text-[#007ACC]" /> },
         { name: 'Visual Studio 2022', icon: <DiVisualstudio className="text-[#5C2D91]" /> },
       ],
     },
