@@ -21,17 +21,34 @@ const Contact = () => {
     return Object.keys(tempErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
       setIsSubmitting(true);
-      // Simulate API call
-      setTimeout(() => {
+      try {
+        const response = await fetch('http://localhost:5000/api/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          setSubmitted(true);
+          setFormData({ name: '', email: '', message: '' });
+          setTimeout(() => setSubmitted(false), 5000);
+        } else {
+          alert(data.error || 'Something went wrong. Please try again.');
+        }
+      } catch (error) {
+        console.error('Error sending message:', error);
+        alert('Failed to connect to the server. Please check your internet connection and try again.');
+      } finally {
         setIsSubmitting(false);
-        setSubmitted(true);
-        setFormData({ name: '', email: '', message: '' });
-        setTimeout(() => setSubmitted(false), 5000);
-      }, 1500);
+      }
     }
   };
 
