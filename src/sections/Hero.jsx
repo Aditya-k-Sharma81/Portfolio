@@ -15,7 +15,6 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-accent-teal font-semibold tracking-wider mb-4">WELCOME TO MY PORTFOLIO</h2>
             <h1 className="text-5xl md:text-7xl font-bold text-typography-lightest mb-6 leading-tight">
               I'm <span className="text-accent-teal">Aditya</span><br />
               Full Stack Developer
