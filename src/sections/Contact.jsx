@@ -26,7 +26,7 @@ const Contact = () => {
     if (validate()) {
       setIsSubmitting(true);
       try {
-        const response = await fetch('http://localhost:5000/api/send-email', {
+        const response = await fetch('https://portfolio-5xcp.onrender.com/api/send-email', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
