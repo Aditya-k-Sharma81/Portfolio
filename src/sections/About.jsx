@@ -28,15 +28,16 @@ const About = () => {
             className="glass-card p-8 md:p-10 max-w-3xl w-full"
           >
             <p className="text-typography-slate mb-6 leading-relaxed">
-              I am a dedicated 6th-semester B.Tech student at <span className="text-accent-teal font-semibold">Lovely Professional University (LPU)</span>.
-              My journey in software development has been driven by a passion for solving complex problems and building seamless user experiences.
+              I am a 6th-semester B.Tech student at <span className="text-accent-teal font-semibold">Lovely Professional University (LPU)</span> with a strong passion for software development and building meaningful digital experiences. My interest in technology started back in 10th grade when I often wondered how websites actually work behind the scenes. That curiosity became the starting point of my journey into the world of programming and web development.
             </p>
             <p className="text-typography-slate mb-6 leading-relaxed">
-              Specializing in the <span className="text-accent-teal font-semibold">MERN Stack</span>, I have developed a strong foundation in both frontend and backend technologies.
-              I am particularly interested in <span className="text-typography-lightest font-medium">Scalable Architecture</span> and the intersection of <span className="text-typography-lightest font-medium">UI/UX Design</span> and Engineering.
+              After joining B.Tech, I began exploring different technologies and gradually built a strong foundation in both frontend and backend development. I have worked with the <span className="text-accent-teal font-semibold">MERN Stack</span> and <span className="text-accent-teal font-semibold">.NET development</span>, where I learned how to design scalable applications and build real-world projects that solve practical problems.
+            </p>
+            <p className="text-typography-slate mb-6 leading-relaxed">
+              Alongside development, I also developed an interest in <span className="text-typography-lightest font-medium">UI/UX design</span> because I believe great software is not only about functionality but also about delivering a smooth and intuitive user experience.
             </p>
             <p className="text-typography-slate leading-relaxed">
-              When I'm not coding, I focus on staying updated with latest research in cloud computing and devops tools. I believe in creating software that is not just functional, but also intuitive and high-performing.
+              I enjoy learning new technologies, building real-time projects, and continuously improving my development skills. My goal is to create applications that are efficient, scalable, and user-friendly while staying updated with modern technologies in <span className="text-typography-lightest font-medium">Cloud Computing</span> and <span className="text-typography-lightest font-medium">DevOps</span>.
             </p>
           </motion.div>
         </div>
