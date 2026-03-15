@@ -17,7 +17,7 @@ const Certifications = () => {
     },
     {
       title: 'ChatGPT-4 Prompt Engineering',
-      issuer: 'Generative AI & LLM',
+      issuer: 'Infosys Springboard',
       date: 'Aug 2025',
       icon: <Star className="text-accent-teal" />,
       image: chatgptCert,
