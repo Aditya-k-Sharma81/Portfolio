@@ -21,7 +21,7 @@ const Hero = () => {
               Full Stack Developer
             </h1>
             <p className="text-typography-slate text-lg mb-8 max-w-lg">
-              Specializing in building high-performance, scalable web applications with the modern MERN stack. Currently a 3rd-year student at LPU.
+              Specializing in building high-performance, scalable web applications with the modern MERN stack and .NET frameworks. Currently a 3rd-year student at LPU.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href={resumePDF} download="Aditya_Resume.pdf" className="btn-primary flex items-center gap-2 inline-flex">

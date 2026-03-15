@@ -33,7 +33,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-2xl font-bold text-accent-teal"
           >
-            Dexzter Codes
+            Aditya Codes
           </motion.div>
 
           {/* Desktop Nav */}
