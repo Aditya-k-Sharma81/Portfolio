@@ -37,7 +37,7 @@ const About = () => {
               Alongside development, I also developed an interest in <span className="text-typography-lightest font-medium">UI/UX design</span> because I believe great software is not only about functionality but also about delivering a smooth and intuitive user experience.
             </p>
             <p className="text-typography-slate leading-relaxed">
-              I enjoy learning new technologies, building real-time projects, and continuously improving my development skills. My goal is to create applications that are efficient, scalable, and user-friendly while staying updated with modern technologies in <span className="text-typography-lightest font-medium">Cloud Computing</span> and <span className="text-typography-lightest font-medium">DevOps</span>.
+              I enjoy learning new technologies, building real-time projects, and continuously improving my development skills. My goal is to create applications that are efficient, scalable, and user-friendly while <span className="text-typography-lightest font-medium">continuously growing as a developer</span>.
             </p>
           </motion.div>
         </div>
