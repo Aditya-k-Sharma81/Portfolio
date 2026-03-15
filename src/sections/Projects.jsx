@@ -12,15 +12,15 @@ const Projects = () => {
       description: 'Engineered a full-stack e-commerce platform using the MERN stack to digitize local vegetable sales and streamline store operations. Integrated Stripe payment processing, Cloudinary for product image management, and automated email notifications, delivering a seamless purchasing experience for users and efficient inventory control for administrators.',
       tech: ['MongoDB', 'Express', 'React', 'Node.js'],
       live: '#',
-      github: '#',
+      github: 'https://github.com/Aditya-k-Sharma81/ECommerce',
       image: generalStoreImg
     },
     {
       title: 'Lostify',
       description: 'Developed a centralized MERN stack application to manage lost and found items efficiently. Integrated TensorFlow with the MobileNet deep learning model to perform image similarity detection, automatically matching uploaded images with reported lost items to help users and administrators reunite items with their owners.',
       tech: ['MongoDB', 'Express', 'React', 'Node.js'],
-      live: '#',
-      github: '#',
+      live: 'https://lostify-hazel.vercel.app/',
+      github: 'https://github.com/Aditya-k-Sharma81/Lostify',
       image: lostifyImg
     },
     {
@@ -28,7 +28,7 @@ const Projects = () => {
       description: 'Developed a full-stack real-time hospital management dashboard to monitor and manage bed availability. Engineered with WebSockets for live status updates, allowing healthcare administrators to efficiently allocate resources, reduce patient wait times, and maintain accurate facility records.',
       tech: ['MongoDB', 'Express', 'React', 'Node.js'],
       live: '#',
-      github: '#',
+      github: 'https://github.com/Aditya-k-Sharma81/Hospital-Management-with-Bed-Availability',
       image: hospitalBedImg
     }
   ];
@@ -82,12 +82,16 @@ const Projects = () => {
                 </p>
 
                 <div className="flex items-center gap-4 pt-4 border-t border-white/10">
-                  <a href={project.live} className="flex items-center gap-1.5 text-xs font-bold text-white hover:text-accent-indigo transition-colors">
-                    <ExternalLink size={14} /> LIVE DEMO
-                  </a>
-                  <a href={project.github} className="flex items-center gap-1.5 text-xs font-bold text-white hover:text-accent-indigo transition-colors">
-                    <Github size={14} /> GITHUB CODE
-                  </a>
+                  {project.live !== '#' && (
+                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs font-bold text-white hover:text-accent-indigo transition-colors">
+                      <ExternalLink size={14} /> LIVE DEMO
+                    </a>
+                  )}
+                  {project.github !== '#' && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs font-bold text-white hover:text-accent-indigo transition-colors">
+                      <Github size={14} /> GITHUB CODE
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
