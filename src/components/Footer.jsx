@@ -12,12 +12,12 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative py-8 overflow-hidden">
+    <footer className="relative py-8 overflow-hidden bg-[#0c182d]">
       {/* Top subtle glow separator */}
-      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-accent-indigo/50 to-transparent"></div>
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-accent-teal/50 to-transparent"></div>
 
       {/* Background ambient light */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-accent-indigo/5 blur-[100px] rounded-full pointer-events-none"></div>
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-accent-teal/5 blur-[100px] rounded-full pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -27,10 +27,10 @@ const Footer = () => {
           viewport={{ once: true }}
           className="flex flex-col items-center text-center pb-4"
         >
-          <h2 className="text-2xl font-bold text-white mb-2 tracking-tight">
-            Let's build something <span className="accent-gradient-text">amazing</span> together.
+          <h2 className="text-2xl font-bold text-typography-lightest mb-2 tracking-tight">
+            Let's build something <span className="text-accent-teal">amazing</span> together.
           </h2>
-          <p className="text-slate-400 max-w-md mx-auto mb-6 text-sm leading-relaxed">
+          <p className="text-typography-slate max-w-md mx-auto mb-6 text-sm leading-relaxed">
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
           </p>
 
@@ -41,7 +41,7 @@ const Footer = () => {
                 key={link.label}
                 href={link.href}
                 aria-label={link.label}
-                className="text-slate-400 hover:text-white hover:scale-110 hover:-translate-y-1 transition-all duration-300 drop-shadow-md"
+                className="text-typography-slate hover:text-accent-teal hover:scale-110 hover:-translate-y-1 transition-all duration-300 drop-shadow-md"
               >
                 {link.icon}
               </a>

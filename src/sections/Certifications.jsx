@@ -19,7 +19,7 @@ const Certifications = () => {
       title: 'ChatGPT-4 Prompt Engineering',
       issuer: 'Generative AI & LLM',
       date: 'Aug 2025',
-      icon: <Star className="text-accent-indigo" />,
+      icon: <Star className="text-accent-teal" />,
       image: chatgptCert,
       link: 'https://drive.google.com/file/d/1oBYn5R3QkwQxvf5kXPJ4bEMPgouhG37Q/view',
       description: 'Mastered advanced techniques in prompt engineering and utilizing large language models for various tasks.'
@@ -28,7 +28,7 @@ const Certifications = () => {
       title: 'Responsive Web Design',
       issuer: 'freeCodeCamp',
       date: 'Oct 2023',
-      icon: <CheckCircle className="text-accent-indigo" />,
+      icon: <CheckCircle className="text-accent-teal" />,
       image: freecodecampCert,
       link: 'https://drive.google.com/file/d/1ZVhZo0gT185ne2FJlDRYACnxsXVXUKTr/view',
       description: 'Intensive course covering modern HTML5, CSS3, accessibility, and responsive web design principles.'
@@ -36,21 +36,24 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20">
+    <section id="certifications" className="py-20 bg-[#071120]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Certificates</h2>
-          <div className="w-20 h-1 bg-accent-indigo mx-auto rounded-full"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-typography-lightest mb-4 flex items-center justify-center gap-2">
+            <span className="text-accent-teal font-normal text-2xl md:text-3xl">06.</span>
+            Certificates
+          </h2>
+          <div className="w-20 h-1 bg-accent-teal mx-auto rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {certifications.map((cert) => (
             <div
               key={cert.title}
-              className="glass-card p-6 flex flex-col h-full group relative overflow-hidden transition-all hover:-translate-y-2 hover:shadow-indigo-500/10"
+              className="glass-card p-6 flex flex-col h-full group relative overflow-hidden transition-all hover:-translate-y-2 hover:shadow-teal-500/10"
             >
               {/* Decorative background glow */}
-              <div className="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 bg-accent-indigo/10 blur-2xl rounded-full group-hover:bg-accent-indigo/20 transition-all z-0"></div>
+              <div className="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 bg-accent-teal/10 blur-2xl rounded-full group-hover:bg-accent-teal/20 transition-all z-0"></div>
 
               {cert.image && (
                 <a
@@ -78,14 +81,14 @@ const Certifications = () => {
                   {cert.icon}
                 </div>
                 <div className="text-right">
-                  <h4 className="text-[10px] font-bold tracking-widest text-accent-indigo uppercase">{cert.issuer}</h4>
+                  <h4 className="text-[10px] font-bold tracking-widest text-accent-teal uppercase">{cert.issuer}</h4>
                   <p className="text-white/60 text-xs font-semibold uppercase tracking-wider mt-1">{cert.date}</p>
                 </div>
               </div>
 
               <div className="flex-grow z-10">
-                <h3 className="text-lg font-bold text-white mb-3 leading-snug group-hover:accent-gradient-text transition-all">{cert.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-typography-lightest mb-3 leading-snug group-hover:text-accent-teal transition-all">{cert.title}</h3>
+                <p className="text-typography-slate text-sm leading-relaxed">
                   {cert.description}
                 </p>
               </div>

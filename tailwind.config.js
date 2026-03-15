@@ -8,13 +8,18 @@ export default {
     extend: {
       colors: {
         dark: {
-          DEFAULT: '#040b16',
+          DEFAULT: '#0a172a',
           lighter: '#0a192f',
           card: 'rgba(10, 25, 47, 0.7)',
         },
         accent: {
           indigo: '#6366f1',
           violet: '#8b5cf6',
+          teal: '#64FFDA',
+        },
+        typography: {
+          lightest: '#CCD6F6',
+          slate: '#A8B2D1',
         }
       },
       backgroundImage: {

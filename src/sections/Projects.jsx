@@ -34,7 +34,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 relative">
+    <section id="projects" className="py-20 relative bg-[#071120]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,8 +43,11 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Featured Projects</h2>
-          <div className="w-20 h-1 bg-accent-indigo mx-auto rounded-full"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-typography-lightest mb-4 flex items-center justify-center gap-2">
+            <span className="text-accent-teal font-normal text-2xl md:text-3xl">04.</span>
+            Featured Projects
+          </h2>
+          <div className="w-20 h-1 bg-accent-teal mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -70,25 +73,25 @@ const Projects = () => {
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map(t => (
-                    <span key={t} className="text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 bg-accent-indigo/10 text-accent-indigo border border-accent-indigo/20 rounded">
+                    <span key={t} className="text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 bg-accent-teal/10 text-accent-teal border border-accent-teal/20 rounded">
                       {t}
                     </span>
                   ))}
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-                <p className="text-slate-400 text-sm mb-6 flex-grow">
+                <h3 className="text-xl font-bold text-accent-teal mb-2">{project.title}</h3>
+                <p className="text-typography-slate text-sm mb-6 flex-grow">
                   {project.description}
                 </p>
 
                 <div className="flex items-center gap-4 pt-4 border-t border-white/10">
                   {project.live !== '#' && (
-                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs font-bold text-white hover:text-accent-indigo transition-colors">
+                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs font-bold text-typography-slate hover:text-accent-teal transition-colors">
                       <ExternalLink size={14} /> LIVE DEMO
                     </a>
                   )}
                   {project.github !== '#' && (
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs font-bold text-white hover:text-accent-indigo transition-colors">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs font-bold text-typography-slate hover:text-accent-teal transition-colors">
                       <Github size={14} /> GITHUB CODE
                     </a>
                   )}

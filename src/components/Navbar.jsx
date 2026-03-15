@@ -15,6 +15,7 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
+    { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
@@ -24,15 +25,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass-nav py-4' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0c182d]/90 backdrop-blur-lg border-b border-white/10 py-4' : 'bg-[#0c182d] py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-2xl font-bold accent-gradient-text"
+            className="text-2xl font-bold text-accent-teal"
           >
-            Portfolio
+            Dexzter Codes
           </motion.div>
 
           {/* Desktop Nav */}
@@ -41,7 +42,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-slate-400 hover:text-white transition-colors text-sm font-medium"
+                className="text-typography-slate hover:text-accent-teal transition-colors text-sm font-medium"
               >
                 {link.name}
               </a>
@@ -68,7 +69,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass-nav border-t border-white/10"
+            className="md:hidden bg-[#0c182d]/95 backdrop-blur-lg border-t border-white/10"
           >
             <div className="px-4 pt-2 pb-6 space-y-2">
               {navLinks.map((link) => (
@@ -76,7 +77,7 @@ const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-3 py-4 text-base font-medium text-slate-400 hover:text-white hover:bg-white/5 rounded-lg"
+                  className="block px-3 py-4 text-base font-medium text-typography-slate hover:text-accent-teal hover:bg-white/5 rounded-lg"
                 >
                   {link.name}
                 </a>

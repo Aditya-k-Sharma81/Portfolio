@@ -11,7 +11,7 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Frontend',
-      icon: <Code2 className="text-accent-indigo" />,
+      icon: <Code2 className="text-accent-teal" />,
       skills: [
         { name: 'HTML5', icon: <FaHtml5 className="text-[#E34F26]" /> },
         { name: 'CSS3', icon: <FaCss3Alt className="text-[#1572B6]" /> },
@@ -23,7 +23,7 @@ const Skills = () => {
     },
     {
       title: 'Backend',
-      icon: <Server className="text-accent-indigo" />,
+      icon: <Server className="text-accent-teal" />,
       skills: [
         { name: 'Node.js', icon: <FaNodeJs className="text-[#339933]" /> },
         { name: 'C#', icon: <TbBrandCSharp className="text-[#239120]" /> },
@@ -59,7 +59,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-dark-lighter/30">
+    <section id="skills" className="py-20 bg-[#0a172a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -68,8 +68,11 @@ const Skills = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">The Developer's Toolbox</h2>
-          <div className="w-20 h-1 bg-accent-indigo mx-auto rounded-full"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-typography-lightest mb-4 flex items-center justify-center gap-2">
+            <span className="text-accent-teal font-normal text-2xl md:text-3xl">03.</span>
+            The Developer's Toolbox
+          </h2>
+          <div className="w-20 h-1 bg-accent-teal mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -80,17 +83,17 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               viewport={{ once: true }}
-              className="glass-card p-6 hover:shadow-indigo-500/10 transition-all border-b-4 border-b-transparent hover:border-b-accent-indigo"
+              className="glass-card p-6 hover:-translate-y-2 hover:shadow-teal-500/10 transition-all"
             >
               <div className="flex items-center gap-3 mb-6">
                 {category.icon}
-                <h3 className="text-xl font-bold text-white">{category.title}</h3>
+                <h3 className="text-xl font-bold text-typography-lightest">{category.title}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
                   <span
                     key={typeof skill === 'string' ? skill : skill.name}
-                    className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs text-slate-400 hover:text-white hover:bg-white/10 transition-colors flex items-center gap-2 font-medium"
+                    className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs text-typography-slate hover:text-accent-teal hover:bg-white/10 transition-colors flex items-center gap-2 font-medium"
                   >
                     {typeof skill === 'object' && <span className="text-sm">{skill.icon}</span>}
                     {typeof skill === 'string' ? skill : skill.name}

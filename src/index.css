@@ -21,11 +21,11 @@ body {
   }
   
   .accent-gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-indigo to-accent-violet;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-teal to-[#A8B2D1];
   }
   
   .btn-primary {
-    @apply px-6 py-3 bg-gradient-to-r from-accent-indigo to-accent-violet text-white font-semibold rounded-full hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-indigo-500/20;
+    @apply px-6 py-3 border border-accent-teal text-accent-teal hover:bg-accent-teal/10 font-semibold rounded-full hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-teal-500/20;
   }
 }
 

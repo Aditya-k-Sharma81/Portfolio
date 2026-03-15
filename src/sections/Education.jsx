@@ -25,7 +25,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20">
+    <section id="education" className="py-20 bg-[#071120]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,8 +34,8 @@ const Education = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Educational Journey</h2>
-          <div className="w-20 h-1 bg-accent-indigo mx-auto rounded-full"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-typography-lightest mb-4">Educational Journey</h2>
+          <div className="w-20 h-1 bg-accent-teal mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="relative max-w-3xl mx-auto before:absolute before:inset-y-0 before:left-0 md:before:left-1/2 before:w-[2px] before:bg-white/10">
@@ -49,16 +49,16 @@ const Education = () => {
               className={`relative mb-12 pl-8 md:pl-0 md:w-1/2 ${idx % 2 === 0 ? 'md:ml-auto md:pl-12' : 'md:mr-auto md:pr-12 md:text-right text-left'}`}
             >
               {/* Timeline dot */}
-              <div className="absolute top-0 -left-[11px] md:left-auto md:right-auto md:top-2 w-6 h-6 bg-dark border-4 border-accent-indigo rounded-full z-10 md:left-1/2 md:-translate-x-1/2"></div>
+              <div className="absolute top-0 -left-[11px] md:left-auto md:right-auto md:top-2 w-6 h-6 bg-dark border-4 border-accent-teal rounded-full z-10 md:left-1/2 md:-translate-x-1/2"></div>
 
-              <div className="glass-card p-6 hover:shadow-indigo-500/10 transition-all group">
+              <div className="glass-card p-6 hover:shadow-teal-500/10 transition-all group">
                 <div className={`flex items-center gap-3 mb-2 ${idx % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-                  <GraduationCap className="text-accent-indigo" size={20} />
-                  <span className="text-accent-indigo font-bold text-sm uppercase tracking-wider">{edu.year}</span>
+                  <GraduationCap className="text-accent-teal" size={20} />
+                  <span className="text-accent-teal font-bold text-sm uppercase tracking-wider">{edu.year}</span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-1 group-hover:accent-gradient-text transition-all">{edu.degree}</h3>
-                <p className="text-white/80 font-medium text-sm mb-3">{edu.institution}</p>
-                <p className="text-slate-400 text-sm leading-relaxed">{edu.desc}</p>
+                <h3 className="text-lg font-bold text-typography-lightest mb-1 group-hover:text-accent-teal transition-all">{edu.degree}</h3>
+                <p className="text-typography-lightest/80 font-medium text-sm mb-3">{edu.institution}</p>
+                <p className="text-typography-slate text-sm leading-relaxed">{edu.desc}</p>
               </div>
             </motion.div>
           ))}
